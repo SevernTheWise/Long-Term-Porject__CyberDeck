@@ -1,0 +1,89 @@
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ===== Editors / IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+
+# ===== Logs & temp files =====
+*.log
+*.tmp
+*.bak
+*.orig
+
+# ===== Secrets / config you never want committed =====
+.env
+*.env.local
+**/secrets.*
+**/wifi_credentials*
+**/*api_key*
+**/*token*
+
+# ===== KiCad =====
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.bck
+*.000
+*.lck
+_autosave-*
+
+# ===== FreeCAD =====
+*.FCBak
+*.FCStd1
+
+# ===== Fusion 360 (if exported locally) =====
+*.f3d.bak
+
+# ===== Slicer output (large, regenerable from CAD source — don't commit) =====
+*.gcode
+*.3mf
+*.bgcode
+
+# ===== Large generated/binary exports =====
+# Keep CAD *source* files, but raw STL/STEP exports can bloat the repo fast.
+# Comment these out (or use Git LFS) if you specifically want exports versioned.
+# *.stl
+# *.step
+# *.stp
+
+# ===== Raspberry Pi / SBC images (huge, never belong in git) =====
+*.img
+*.iso
+
+# ===== Firmware build artifacts =====
+*.bin
+*.elf
+*.hex
+*.map
+build/
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ===== Node (only relevant if a dashboard/web UI gets added later) =====
+node_modules/
+dist/
+.cache/
+
+# ===== Archives =====
+*.zip
+*.tar.gz
+*.7z
